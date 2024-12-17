@@ -6,17 +6,48 @@ weight: 2
 
 # AWS Hosted Workshop Setup <!-- MODIFY THIS HEADING -->
 
-## Module Two Heading <!-- MODIFY THIS SUBHEADING -->
+![Architecture Diagram](Architecture.png)
 
-This paragraph block should be an introduction to the module about the method of setting up the workshop using EventEngine in AWS. Some typical examples of the steps in this process will explain logging out of any current AWS accounts, how to utilize the hashed URL, utilizing the Team Dashboard to log in to the AWS console, and ensure that the correct region is being selected.
+## Prerequisites 
+ <!-- MODIFY THIS SUBHEADING -->
 
-{{% notice info %}}
-<p style='text-align: left;'>
-**REMOVE:** With the exception of _index.md, the module folders and filenames should be changed to better reflect their content, i.e. 1_Planning as the folder and 11_HowToBegin as the first submodule. Changing the "weight" value of the header is ultimately what reflects the order the modules are presented.
-</p>
-{{% /notice %}}
+ pg_dump + restore workflow:
 
-**REMOVE:** Every introduction page should include the following warning label.
+# AWS Section: 
+
+## RDS connection string 
+    
+    Docs for how to get an RDS connection string: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.DBInstance.Connection.html
+
+    If you don't have an RDS connection string that you can use, for this co-hosted workshop, we will be pre-provisioning a workshop-specific RDS cluster/ AWS account. 
+## AWS deployment region
+    For the workshop, we will be using the us-east-1 region. 
+    
+    How are we going to generate the connection string for an RDS cluster and Amazon account? 
+    Will we be able to seed the RDS cluster with data ahead of time? 
+    
+    If not, what is the fastest way to get data into the RDS cluster?  
+
+
+# Neon section 
+## A Neon account
+    Link to our Quickstart Neon "Getting Started" Section: 
+## Neon database (deployed to the same AWS region as your RDS database) 
+- While not absolutely necessary, using the same AWS region can help reduce egress charges. Neon does not charge for ingress. 
+
+
+## Gitub repository access to Actions and Secrets
+- Instructions for getting started with GitHub Actions and Secrets. (Maybe record a video for this?)
+
+
+If you don't have an RDS connection string that you can use, you can use the following steps to create one. In the case of this co-hosted workshop, we will be walking you through the steps to create a Neon Twin using a workshop-specific RDS cluster/account. 
+
+
+
+
+## Quickstart
+[View GitHub Workflow](https://github.com/neondatabase-labs/rds-to-neon-twin/blob/main/.github/workflows/create-neon-twin-default.yml)
+
 
 {{% notice warning %}}
 The examples and sample code provided in this workshop are intended to be consumed as instructional content. These will help you understand how various AWS services can be architected to build a solution while demonstrating best practices along the way. These examples are not intended for use in production environments.

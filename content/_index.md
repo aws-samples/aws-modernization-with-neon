@@ -1,23 +1,36 @@
 ---
-title: "AWS Modernization Workshop Base Template" # MODIFY THIS TO BE THE TITLE OF YOUR WORKSHOP
+title: "AWS Workshop: Overcoming RDS Bottlenecks & Enhancing Development Workflows with Neon" # MODIFY THIS TO BE THE TITLE OF YOUR WORKSHOP
 chapter: true
 weight: 1
 ---
 
-# AWS Modernization Workshop Base Template <!-- CHANGE THIS TO BE THE TITLE OF YOUR WORKSHOP -->
+# AWS Workshop: Overcoming RDS Bottlenecks & Enhancing Development Workflows with Neon <!-- CHANGE THIS TO BE THE TITLE OF YOUR WORKSHOP -->
 <br>
 ![Partner Logo](/images/AWS_Logo.png)  <!-- ADD YOUR PARTNER LOGO HERE USING THE INSTRUCTIONS BELOW -->
 <br>
 
 ## Welcome
 
-**REMOVE:** By utilizing this template, you can create your workshops with little coding knowledge. These workshops use the Hugo Framework and the hugo-theme-learn submodules. By writing content using simple markdown code, Hugo creates the necessary HTML for you. Examples of code, files, and folders here can be modified, copied, pasted, and deleted as necessary. Block sections of instruction that should be removed will be explicitly marked with **REMOVE**. Other sections should be modified to reflect the workshop. For guidance on how to utilize the Hugo framework and markdown, please refer to the module titled "Hugo Framework And Markdown". That module can be removed once building the workshop is complete.
+In this 120-minute workshop, we’ll show you how to boost your development speed by integrating Neon into your existing AWS RDS Postgres setup. While RDS remains a trusted choice for production, it falls short in development experience. Neon, a serverless PostgreSQL solution with powerful database branching, offers a dev-friendly alternative for hosting your development and testing environments, so you improve your workflows and team collaboration without the need for disruptive production migrations. 
 
-This paragraph block can give the high level overview of the learning goals and use cases of what the workshop is trying to teach.
 
-This paragraph block can be used to introduce the company and how the solution being taught addresses specific issues.
+**During the workshop, we’ll walk you through:**
+1. Setting up Neon as your development environment
+2. Automating data transfer from RDS to Neon using ``pg_dump`` and ``GitHub Actions``
+3. Efficiently migrating changes back to RDS
 
-**REMOVE:** Every introduction page should include the following warning label.
+<br>
+
+We’ll guide you step-by-step through setting up Neon as your development environment, automating data transfer from RDS to Neon using ``pg_dump`` and GitHub Actions and how to efficiently migrate changes back to RDS. By the end, you’ll be equipped to iterate faster, collaborate better, and reduce costs—all while keeping your production database stable on RDS.
+
+## Co-hosted Workshop vs Self-paced Workshop: 
+
+
+
+
+
+<br> 
+<br>
 
 {{% notice warning %}}
 The examples and sample code provided in this workshop are intended to be consumed as instructional content. These will help you understand how various AWS services can be architected to build a solution while demonstrating best practices along the way. These examples are not intended for use in production environments.
