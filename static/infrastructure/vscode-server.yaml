@@ -1046,7 +1046,7 @@ Resources:
                     echo "export DB_PASSWORD='$DB_PASSWORD'" >> /home/${VSCodeUser}/.bashrc
                     echo "export DB_NAME='employees'" >> /home/${VSCodeUser}/.bashrc
                     echo "export PGPASSWORD='$DB_PASSWORD'" >> /home/${VSCodeUser}/.bashrc
-                    echo "export DATABASE_URL='$CONNECTION_STRING'" >> /home/${VSCodeUser}/.bashrc
+                    echo "export PROD_DATABASE_URL='$CONNECTION_STRING'" >> /home/${VSCodeUser}/.bashrc
                     
                     # Set ownership and source
                     chown -R ${VSCodeUser}:${VSCodeUser} /home/${VSCodeUser}/.bashrc
@@ -1056,7 +1056,7 @@ Resources:
                     
                     # Verify the environment variables were set
                     echo "Verifying environment variables..."
-                    su - ${VSCodeUser} -c 'env | grep -E "DB_|DATABASE_URL"'
+                    su - ${VSCodeUser} -c 'env | grep -E "DB_|PROD_DATABASE_URL"'
           - action: aws:runShellScript
             name: FullDatabaseSetup
             inputs:
