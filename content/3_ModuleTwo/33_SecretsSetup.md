@@ -12,11 +12,12 @@ In this section, we'll configure the required secrets for our GitHub Actions wor
 
 1. Open a new terminal in **VSCode Server**.  
 2. Run these commands to view your connection details in your VSCode Terminal:  
+
 ```bash
-echo $DB_ENDPOINT     # Shows your database endpoint  
 echo $DEV_DATABASE_URL # Shows your database URL  
 echo $PROD_DATABASE_URL    # Shows the full connection string
 ```
+
 ![Screenshot of Environment Variable Output](/static/images/environment-variables-output.png)  
 
 ## 🔐 Adding Repository Secrets
