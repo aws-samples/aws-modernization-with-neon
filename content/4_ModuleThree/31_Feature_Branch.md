@@ -62,6 +62,12 @@ Follow these steps to create a feature database in the Neon Console:
 
    ![Feature Salary](/images/feature-salary.png)
 
+7. Exit the database:
+
+   ```sql
+   \q
+   ```
+
 ---
 
 ## ✅ Step 3: Apply Schema Changes to the Feature Database
@@ -109,10 +115,15 @@ The connection string for the **main database** is already saved as an environme
    SELECT * FROM employees.salary LIMIT 15;
    ```
 
-![Neon DB Schema](/images/neon-db-schema.png)
+   ![Neon DB Schema](/images/neon-db-schema.png)
 
-> **Result**: The `bonus` column will not appear in the main database.
+   > **Result**: The `bonus` column will not appear in the main database.
 
+4. Exit the database:
+
+   ```sql
+   \q
+   ```
 ---
 
 ## ✅ Step 5: Clean Up the Feature Database

@@ -31,6 +31,7 @@ Once you have confirmed your database connection details, follow these steps to 
 ```bash
 echo "Decompressing dataset..."  
 pg_restore -O -U $DB_USERNAME -d $DB_NAME -h $DB_ENDPOINT /tmp/employees.sql.gz  
+echo "Dataset decompressed"  
 ```
 
 ![Screenshot of Dataset Decompression](/images/decompress-dataset.png)  
@@ -40,6 +41,7 @@ pg_restore -O -U $DB_USERNAME -d $DB_NAME -h $DB_ENDPOINT /tmp/employees.sql.gz
 ```sql
 echo "Setting up schema access..."  
 psql -h $DB_ENDPOINT -U $DB_USERNAME -d $DB_NAME
+echo "Schema access setup complete" 
 ```
 
 Set search path for easier access  

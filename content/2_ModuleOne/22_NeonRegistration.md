@@ -82,7 +82,7 @@ Note: This database currently has no table data so running this command below wi
 ```sql
 \d
 ```
-![New Neon DB](/images/new-neon-db.png)
+![New Neon DB](/images/neon-db-database.png)
 
 However in the Github Actions section, we will automate the process to sync the RDS database with your Neon DB on a nightly scheduled occurrence.
 

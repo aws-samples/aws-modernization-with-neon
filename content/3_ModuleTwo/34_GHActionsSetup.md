@@ -13,7 +13,7 @@ In this section, we'll create the GitHub Actions workflow that syncs your RDS da
 1. In your repository, navigate to:
    - Click on "Actions"
    - Click "New workflow"
-   - Choose "set up a workflow yourself"
+   - Choose "Configure"
 
 ![Create Workflow](/images/create-workflow.png)
 
@@ -174,6 +174,8 @@ jobs:
 
 3. Click "Commit changes" to save the workflow
 
+---
+
 ## 🔄 Monitoring the Sync Process
 
 ### Automatic Initial Sync
@@ -184,6 +186,8 @@ When you first commit the workflow file:
 4. This will take about 3-5 mins to complete
 
 ![Initial Run](/images/initial-run.png)
+
+---
 
 ### Understanding the Workflow Steps
 You can monitor these key stages:
@@ -203,26 +207,7 @@ You can monitor these key stages:
 
 ![Successful GH Action](/images/success-run.png)
 
-### 🚀 Manual Execution
-To run the sync manually:
-1. Go to the "Actions" tab
-2. Click "Create Neon Twin"
-3. Select "Run workflow"
-4. Click the green "Run workflow" button
-
-![Manual Run](/images/manual-run.png)
-
-### 🔍 Troubleshooting
-If you see issues:
-1. Click on the failed step to expand logs
-2. Check RDS connection details
-3. Verify Neon database URL
-4. Confirm AWS permissions
-
-### 📅 Scheduled Runs
-- The sync runs automatically at midnight daily
-- Check "Actions" tab for historical runs
-- Each run shows duration and status
+---
 
 ## 🎯 Check Neon DB
 With your sync configured:
@@ -250,5 +235,38 @@ LIMIT 5;
 
 **You should see the top 5 departments with the highest average salary.**
 
-### 🚀 Congrats! You have successfully synced your RDS Database with your Neon Database! Now lets head over to the next section where we dive into Neon Branches.
+Exit the database:
 
+```sql
+\q
+```
+---
+
+### 🚀 Manual Execution
+To run the sync manually:
+1. Go to the "Actions" tab
+2. Click "Create Neon Twin"
+3. Select "Run workflow"
+4. Click the green "Run workflow" button
+
+![Manual Run](/images/manual-run.png)
+
+---
+
+### 🔍 Troubleshooting
+If you see issues:
+1. Click on the failed step to expand logs
+2. Check RDS connection details
+3. Verify Neon database URL
+4. Confirm AWS permissions
+
+---
+
+### 📅 Scheduled Runs
+- The sync runs automatically at midnight daily
+- Check "Actions" tab for historical runs
+- Each run shows duration and status
+
+---
+
+### 🚀 Congrats! You have successfully synced your RDS Database with your Neon Database! Now lets head over to the next section where we dive into Neon Branches.
