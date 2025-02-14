@@ -15,7 +15,7 @@ In this section, we'll create the GitHub repository that will host our database 
 ![Create New Repo](/images/create-new-repo.png)
 
 3. Configure your repository:
-   - Enter a repository name (e.g., `neon-rds-workshop`)
+   - Enter a repository name (e.g., `neon`)
    - Choose "Public" or "Private"
    - Initialize with a README
    - Click "Create repository"

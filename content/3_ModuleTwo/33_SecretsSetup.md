@@ -14,8 +14,8 @@ In this section, we'll configure the required secrets for our GitHub Actions wor
 2. Run these commands to view your connection details in your VSCode Terminal:  
 
 ```bash
-echo $DEV_DATABASE_URL # Shows your database URL  
-echo $PROD_DATABASE_URL    # Shows the full connection string
+echo $PROD_DATABASE_URL  # Shows your PROD database URL  
+echo $DEV_DATABASE_URL   # Shows the full connection string
 ```
 
 ![Screenshot of Environment Variable Output](/static/images/environment-variables-output.png)  
@@ -30,19 +30,19 @@ echo $PROD_DATABASE_URL    # Shows the full connection string
 
 4. Add your AWS Role from the previous section:
    - Name: `AWS_ACCOUNT_ROLE`
-   - Secret: Your AWS region (Needs to be: `us-west-2`)
+   - Secret: Add the "GitHubActionsRoleArn" value copied from the OIDC setup cloudformation outputs.
 
 ![Add Region Secret](/static/images/add-role-secret.png)
 
 5. Add your RDS connection string:
    - Name: `PROD_DATABASE_URL`
-   - Secret: Your RDS connection string (from Module 1)
+   - Secret: Copy the "PROD_DATABASE_URL" value from  VSCode Terminal output in Step 1 of this section.
 
 ![Add Production Secret](/static/images/add-prod-secret2.png)
 
 6. Add your Neon connection string:
    - Name: `DEV_DATABASE_URL`
-   - Secret: Your Neon connection string (from Module 2)
+   - Secret: Your Neon connection string (DEV_DATABASE_URL) value from VSCode Terminal output in Step 1 of this section.
 
 ![Add Development Secret](/static/images/add-dev-secret.png)
 
