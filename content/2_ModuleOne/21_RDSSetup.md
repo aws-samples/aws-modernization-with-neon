@@ -16,7 +16,7 @@ echo $DB_ENDPOINT     # Shows your database endpoint
 echo $DB_USERNAME     # Shows your database username  
 echo $DB_PASSWORD     # Shows your database password  
 echo $DB_NAME         # Shows your database name  
-echo $DATABASE_URL    # Shows the full connection string
+echo $PROD_DATABASE_URL    # Shows the full connection string
 ```
 ![Screenshot of Environment Variable Output](/images/environment-variables-output.png)  
 
